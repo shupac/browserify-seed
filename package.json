@@ -18,11 +18,14 @@
     "watch": "watchify src/index.js -o public/bundle.js --debug --verbose",
     "lint-eslint": "eslint src/",
     "lint-jscs": "jscs src/",
-    "lint": "npm run lint-eslint && npm run lint-jscs"
+    "lint": "npm run lint-eslint && npm run lint-jscs",
+    "spinaltap": "famous-test ./test/**/*.test.js --local",
+    "spinalsauce": "famous-test ./test/**/*.test.js"
   },
   "devDependencies": {
     "eslint": "^0.7.4",
-    "jscs": "^1.5.8"
+    "jscs": "^1.5.8",
+    "tape": "^2.14.0"
   },
   "author": "TheAlphaNerd",
   "license": "ISC",
@@ -31,6 +34,7 @@
     "browserify": "^5.9.1",
     "cssify": "^0.6.0",
     "famous": "^0.2.2",
+    "famous-test": "git+ssh://git@github.com:Famous/famous-test.git#master",
     "famous-polyfills": "^0.2.2",
     "hapi": "^6.5.1",
     "uglify-js": "^2.4.15",
