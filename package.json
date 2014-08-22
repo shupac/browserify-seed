@@ -19,8 +19,8 @@
     "lint-eslint": "eslint src/",
     "lint-jscs": "jscs src/",
     "lint": "npm run lint-eslint && npm run lint-jscs",
-    "spinaltap": "famous-test ./test/**/*.test.js --local",
-    "spinalsauce": "famous-test ./test/**/*.test.js"
+    "spinaltap": "spinaltap ./test/**/*.test.js --local",
+    "spinalsauce": "spinaltap ./test/**/*.test.js"
   },
   "devDependencies": {
     "eslint": "^0.7.4",
@@ -34,7 +34,7 @@
     "browserify": "^5.9.1",
     "cssify": "^0.6.0",
     "famous": "^0.2.2",
-    "famous-test": "git+ssh://git@github.com:Famous/famous-test.git#master",
+    "spinaltap": "git+ssh://git@github.com:Famous/spinaltap.git#master",
     "famous-polyfills": "^0.2.2",
     "hapi": "^6.5.1",
     "uglify-js": "^2.4.15",
